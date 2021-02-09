@@ -30,6 +30,7 @@ $navbar-dropdown-background-color: $scheme-main !default
 $navbar-dropdown-border-top: 2px solid $border !default
 $navbar-dropdown-offset: -4px !default
 $navbar-dropdown-arrow: $link !default
+$navbar-dropdown-active-arrow: $link !default
 $navbar-dropdown-radius: $radius-large !default
 $navbar-dropdown-z: 20 !default
 
@@ -220,6 +221,8 @@ a.navbar-item,
     border-color: $navbar-dropdown-arrow
     margin-top: -0.375em
     +ltr-position(1.125em)
+  &.is-active::after
+    border-color: $navbar-dropdown-active-arrow
 
 .navbar-dropdown
   font-size: 0.875rem
